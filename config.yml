@@ -1,0 +1,11 @@
+pandoc_bin: /usr/bin/pandoc
+glossary: ./content/glossary.yml
+frontmatter: ./content/titlepage.yml
+content_dir: ./content
+before_body:
+    - executive_summary.md
+    - personal_reflection.md
+introduction: introduction.md
+body: 
+    - body.md
+conclusion: conclusions.md
