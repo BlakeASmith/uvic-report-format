@@ -46,6 +46,32 @@ config:
   output: ./report.pdf
 ```
 
+### CLI Usage
+
+> `uvic-report-format --help`
+
+```text
+Usage: uvic-report-format [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  compile
+
+```
+
+> `uvic-report-format compile --help`
+
+```text
+Usage: uvic-report-format compile [OPTIONS]
+
+Options:
+  -o, --open
+  -f, --yml-file PATH  The YAML config file.
+  --help               Show this message and exit.
+```
+
 ### Content
 
 Create content files as layed out in your `report.yml` file.
@@ -55,7 +81,7 @@ Create content files as layed out in your `report.yml` file.
 Once the content files are in place generate the report using the following:
 
 ```shell script
-uvic-report-format -f report.yml --open
+uvic-report-format compile -f report.yml --open
 ```
 
 The resulting pdf will be opened in your browser for preview.

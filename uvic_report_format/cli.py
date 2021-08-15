@@ -8,7 +8,7 @@ from . import frontmatter, glossary, pandoc
 
 coverpage = Path(__file__).parent/"templates/titlepage.md"
 
-@click.group
+@click.group()
 def cli():
     ...
 
@@ -24,7 +24,7 @@ def cli():
     "-o", "--open",
     is_flag=True,
 )
-@click.command()
+@cli.command()
 def compile(yml_file, open):
     report = Report.parse_file(yml_file)
 

@@ -17,7 +17,8 @@ pydantic-yaml = "^0.4.2"
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-compile = "uvic_report_format.cli:compile"
+uvic-report-compile = "uvic_report_format.cli:compile"
+uvic-report-format = "uvic_report_format.cli:cli"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
