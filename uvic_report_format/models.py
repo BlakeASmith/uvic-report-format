@@ -14,6 +14,7 @@ class StudentInfo(YamlModel):
     email: EmailStr
     employer: str
     location: str
+    date: str
     institution: str = "University of Victoria"
     faculty: str = "Engineering and Computer Science"
     term: Term = "Summer"
